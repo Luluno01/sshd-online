@@ -1,0 +1,31 @@
+{
+  "name": "koa-starter",
+  "version": "1.0.0",
+  "description": "Koa application starter",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_ENV=development && nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/server.ts",
+    "build": "tsc",
+    "serve": "set NODE_ENV=production && node ./build/server.js"
+  },
+  "keywords": [
+    "Koa",
+    "Koa starter"
+  ],
+  "author": "Untitled",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.40",
+    "@types/node": "^11.10.4",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-log4": "^2.3.2",
+    "koa-router": "^7.4.0"
+  }
+}

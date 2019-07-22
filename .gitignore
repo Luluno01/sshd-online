@@ -1,0 +1,6 @@
+/logs
+node_modules
+/build
+/redis.txt
+/db.txt
+.vscode
