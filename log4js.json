@@ -14,11 +14,18 @@
       "filename": "logs/http/",
       "pattern": "http-yyyy-MM-dd.log",
       "alwaysIncludePattern": true
+    },
+    "io": {
+      "type": "dateFile",
+      "filename": "logs/io/",
+      "pattern": "io-yyyy-MM-dd.log",
+      "alwaysIncludePattern": true
     }
   },
   "categories": {
     "default": { "appenders": [ "console" ], "level": "debug" },
     "app": { "appenders": [ "console", "app" ], "level": "debug" },
-    "http": { "appenders": [ "console", "http" ], "level": "debug" }
+    "http": { "appenders": [ "console", "http" ], "level": "debug" },
+    "io": { "appenders": [ "console", "io" ], "level": "debug" }
   }
 }

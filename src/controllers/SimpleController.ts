@@ -1,5 +1,5 @@
-import { Context } from 'koa'
 import { Method } from '../global'
+import { Context } from 'koa'
 
 
 export class SimpleController {

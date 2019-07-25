@@ -4,3 +4,4 @@ node_modules
 /redis.txt
 /db.txt
 .vscode
+/*.db

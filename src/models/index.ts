@@ -1,7 +1,5 @@
 import * as User from './User'
 import _sequelize from './db'
-import Store from '../helpers/Store'
-const { cache } = require('../../config.json')
 
 
 export const models = {
@@ -15,7 +13,6 @@ const createTables = [
 ]
 
 export async function sync() {
-  if(cache) await (await (new Store).init()).flushdb()
   for(let model of createTables) {
     await model.default.sync({ force: true })
   }

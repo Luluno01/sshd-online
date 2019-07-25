@@ -5,13 +5,11 @@
     "noImplicitAny": false,
     "outDir": "build",
     "sourceMap": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "experimentalDecorators": true
   },
   "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "csgo-worker/**/*.ts",
-    "csgo-worker/**/*.d.ts"
+    "src/**/*.ts",
+    "node_modules/unlib.js/src/**/*.ts"
   ]
 }

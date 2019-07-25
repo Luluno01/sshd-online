@@ -5,7 +5,9 @@ interface E { err: (Error | string) }
  * @param err Error instance or string to be formatted.
  */
 export function formatError(err: Error | string): string {
-  return err instanceof Error ? (err.stack || err.toString()) : err
+  if(err instanceof Error) {
+    return err.toString() + (err.message ? `: ${err.message}` : '')
+  } else return err
 }
 
 /**

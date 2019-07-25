@@ -1,7 +1,4 @@
 {
   "port": 3000,
-  "maxQueueSize": 5,
-  "CORS": [
-    "http://localhost:3000"
-  ]
+  "CORS": []
 }

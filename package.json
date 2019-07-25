@@ -1,0 +1,45 @@
+{
+  "name": "ssh-online",
+  "version": "1.0.0",
+  "description": "A web server that provides ssh access via your browser",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/server.ts",
+    "build": "tsc",
+    "serve": "node ./build/src/server.js",
+    "createUser": "node ./build/src/scripts/createUser.js",
+    "sync": "node ./build/src/scripts/sync.js"
+  },
+  "keywords": [
+    "web-ssh",
+    "web-sshd",
+    "sshd"
+  ],
+  "author": "Untitled",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-session": "^5.10.1",
+    "@types/node": "^12.6.8",
+    "@types/socket.io": "^2.1.2",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "unlib.js": "git+https://github.com/Luluno01/unlib.js.git"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-log4": "^2.3.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.2",
+    "memorystore": "^1.6.1",
+    "node-pty": "^0.9.0-beta19",
+    "sequelize": "^5.10.1",
+    "socket.io": "^2.2.0",
+    "sqlite3": "^4.0.9"
+  }
+}
