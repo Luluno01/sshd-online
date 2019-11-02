@@ -38,7 +38,7 @@
     "koa-session": "^5.12.2",
     "memorystore": "^1.6.1",
     "node-pty": "^0.9.0-beta19",
-    "sequelize": "^5.10.1",
+    "sequelize": "^5.15.1",
     "socket.io": "^2.2.0",
     "sqlite3": "^4.0.9"
   }
